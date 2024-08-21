@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Patient Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .header {
+            padding: 20px;
+            text-align: center;
+            background: #331dd9;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .back-button {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 18px;
+        }
+        .patient-info, .goal-progress, .patient-details {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-picture img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .progress-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .progress-circle p {
+            margin: 0;
+            font-size: 18px;
+        }
+        .icon-text {
+            display: flex;
+            align-items: center;
+        }
+        .icon-text img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="login.html" class="back-button">←</a>
+            <h1>View Patient</h1>
+        </header>
+
+        <section class="patient-info">
+            <div class="profile-details">
+                <h2>S.Meena, F/23</h2>
+                <p>Patient ID: 87 20200727153457</p>
+            </div>
+            <div class="profile-picture">
+                <img src="profile.png" alt="Profile Picture">
+            </div>
+        </section>
+
+        <section class="goal-progress">
+            <div class="progress-circle-container">
+                <div class="progress-circle">
+                    <p>40%</p>
+                </div>
+                <div class="goal-reached">Goal reached</div>
+                <div class="goal-details">
+                    <div class="goal-detail">
+                        <span>EMG</span>
+                        <img src="emg.png" alt="EMG">
+                    </div>
+                    <div class="goal-detail">
+                        <span>ROM</span>
+                        <img src="emg.png" alt="ROM">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="patient-details">
+            <p>
+                <strong>Phone no:</strong>
+                <span class="icon-text">
+                    <img src="phone-call (1).png" alt="Phone Icon">
+                    8022334455
+                </span>
+            </p>
+            <p>
+                <strong>Mail ID:</strong>
+                <span class="icon-text">
+                    <img src="email.png" alt="Mail Icon">
+                    meenarabinsachin2@gmail.com
+                </span>
+            </p>
+            <p>
+                <strong>Affected side:</strong>
+                <span class="icon-text">
+                    <img src="handshake.png" alt="Affected Side Icon">
+                    Bilateral
+                </span>
+            </p>
+            <p>
+                <strong>Condition:</strong>
+                <span class="icon-text">
+                    <img src="knee.png" alt="Condition Icon">
+                    Ortho
+                </span>
+            </p>
+            <p>
+                <strong>Speciality:</strong>
+                <span class="icon-text">
+                    <img src="orthopedics.png" alt="Speciality Icon">
+                    Osteoarthritis
+                </span>
+            </p>
+            <p>
+                <strong>Medical History:</strong>
+                <span class="icon-text">
+                    <img src="lady-doctor.png" alt="Medical History Icon">
+                    Hypertension, DM, Hypothyroidism
+                </span>
+            </p>
+        </section>
+    </div>
+</body>
+</html>
